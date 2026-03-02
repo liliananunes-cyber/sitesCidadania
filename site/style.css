@@ -1,0 +1,250 @@
+:root {
+  --cor-fundo: #f7fef9;
+  --cor-texto: #1f1f1f;
+  --cor-accento: #1a9b6d;
+  --cor-accento2: #2cb7d9;
+  --cor-neutra: #ececec;
+  --cor-cartao: #ffffff;
+
+  --raio: 14px;
+  --sombra: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.site-header {
+  background: linear-gradient(90deg, var(--cor-accento), var(--cor-accento2));
+  color: #fff;
+  padding: 0.75rem 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.hero { padding: 2rem 0; }
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 2.2rem;
+  margin: 0 0 1rem 0;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.75rem 1.2rem;
+  background: var(--cor-accento);
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cta:hover { opacity: 0.9; }
+
+.hero-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: var(--cor-cartao);
+  padding: 1.2rem;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--cor-accento);
+}
+
+.card a {
+  font-weight: 600;
+  color: var(--cor-accento);
+  text-decoration: none;
+}
+
+.card ul { padding-left: 1.2rem; margin-top: 0.8rem; }
+.card ul li { margin-bottom: 0.6rem; }
+.card p { margin-bottom: 0; }
+
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.media-grid img,
+.media-grid iframe {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: var(--sombra);
+}
+
+.newsletter {
+  background: rgba(26,155,109,0.06);
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.newsletter-form button {
+  background: var(--cor-accento);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.impact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.impact-table th,
+.impact-table td {
+  border: 1px solid #ddd;
+  padding: 0.7rem;
+}
+
+.impact-table th {
+  background: #f1f1f1;
+  font-weight: 600;
+  color: var(--cor-accento);
+}
+
+.site-footer {
+  background: #f0f0f0;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.site-footer nav a {
+  color: #555;
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+.dicas-intro h1,
+.produtos-intro h1 {
+  font-size: 2rem;
+  color: var(--cor-accento);
+  margin-bottom: 0.5rem;
+}
+
+.dicas-section h2,
+.produtos-section h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  color: #1f1f1f;
+}
+
+@media (max-width: 1024px) {
+  .media-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 820px) {
+  .hero-grid,
+  .media-grid,
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .main-nav { display: none; }
+  .nav-toggle { display: block; }
+
+  #main-nav.mobile-active {
+    display: block;
+    background: rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+  }
+}
