@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Soluções e Ações</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body id="topo">
+<header class="site-header">
+    <div class="container">
+        <h1 class="logo">Soluções</h1>
+        <nav aria-label="Principal">
+            <ul class="nav">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="exemplos.html">Exemplos</a></li>
+                <li><a href="solucoes.html" class="active">Soluções</a></li>
+                <li><a href="combate.html">Impactos</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h2>Ações de prevenção e combate</h2>
+
+    <section class="solutions-grid">
+        <article>
+            <h3>Educação inclusiva</h3>
+            <p>Integrar currículos que abordem história e contribuições de grupos marginalizados,
+            promover pensamento crítico e metodologias participativas nas escolas.</p>
+        </article>
+
+        <article>
+            <h3>Campanhas de sensibilização</h3>
+            <p>Campanhas locais e nacionais que visam desmistificar estereótipos e promover
+            participação cívica.</p>
+        </article>
+
+        <article>
+            <h3>Legislação e direitos humanos</h3>
+            <p>Fortalecer leis anti-discriminação, garantir aplicação efetiva e acesso a
+            mecanismos de queixa.</p>
+        </article>
+    </section>
+
+    <a class="voltar" href="#topo" id="btnTopo">Voltar ao topo</a>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2025 — Francisco e Deivison</p>
+    </div>
+</footer>
+</body>
+</html>
+
+<script>
+    document.getElementById("btnTopo").addEventListener("click", function(e) {
+        e.preventDefault(); 
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+    </script>
