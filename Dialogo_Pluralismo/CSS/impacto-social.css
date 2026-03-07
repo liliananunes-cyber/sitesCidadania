@@ -1,0 +1,51 @@
+/* Roxo poderoso e inspirador */
+body {
+    --azul: #7c3aed;
+    /* roxo escuro */
+    --turquesa: #a78bfa;
+    /* roxo claro */
+}
+
+/* Gradiente roxo no cabeçalho */
+header {
+    background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%);
+}
+
+/* Títulos roxos */
+.card h2 {
+    color: #7c3aed;
+}
+
+/* Layout para texto à esquerda + imagem à direita */
+.layout-lado-a-lado {
+    display: flex;
+    /* ativa o flexbox */
+    align-items: center;
+    /* alinha no meio verticalmente */
+    gap: 30px;
+    /* espaço entre texto e imagem */
+}
+
+.card-body {
+    flex: 1;
+    /* texto ocupa o espaço disponível */
+}
+
+.layout-lado-a-lado img {
+    flex-shrink: 0;
+    /* imagem não encolhe */
+    width: 300px;
+    /* largura fixa */
+    height: 200px;
+    /* altura fixa */
+    object-fit: cover;
+    /* cobre o espaço sem deformar */
+    border-radius: 12px;
+    /* cantos arredondados */
+}
+
+.layout-lado-a-lado img {
+    width: 100%;
+    /* imagem ocupa toda a largura */
+    max-width: 350px;
+}

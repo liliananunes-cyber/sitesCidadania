@@ -1,0 +1,15 @@
+/* Cor do corpo Laranja */
+body {
+    --azul: #ea580c;        /* laranja escuro */
+    --turquesa: #f97316;    /* laranja claro */
+}
+
+/* Gradiente laranja no cabeçalho */
+header {
+    background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+}
+
+/* Título laranja */
+.card h2 {
+    color: #ea580c;
+}

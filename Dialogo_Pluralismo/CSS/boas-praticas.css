@@ -1,0 +1,33 @@
+/* Verde crescimento e harmonia */
+body {
+    --azul: #16a34a;        /* verde escuro */
+    --turquesa: #22c55e;    /* verde claro */
+}
+
+/* Gradiente verde no cabeçalho */
+header {
+    background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+}
+
+/* Títulos dos cartões em verde */
+.card h2 {
+    color: #16a34a;
+}
+
+h1 {
+    text-align: center;
+}
+
+.paragrafo {
+    text-align: center;
+}
+
+/* Justificando o texto principal*/
+p {
+    text-align: justify;
+}
+
+/* centralizando o footer */
+footer p {
+    text-align: center;
+}
